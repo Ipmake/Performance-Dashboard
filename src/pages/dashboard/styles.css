@@ -3,12 +3,21 @@
     transition: ease-in-out 0.25s;
 }
 
+.content{
+    margin-left: 8vw;
+}
+
+
 .sidebar {
     float: left;
     display: block;
     height: 100vh;
     z-index: 1;
     background-color: #4e5d942f;
+}
+
+h3{
+    color:white;
 }
 
 i{
@@ -30,4 +39,68 @@ li:hover {
     align-items: center;
     width: 5.5rem;
     height: 4rem;
+}
+
+.performances{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 30%;   
+    gap: 1vw;
+    margin-top: 10px;
+
+    background-color: #13161877;
+    border-radius: 20px;
+
+    z-index: 10;
+}
+
+.prf-title {
+    position: absolute;
+    margin-right: 70vw;
+    color: white;
+    font-size: 3rem;
+}
+
+p{
+    color: white;
+    position: absolute;
+    top: 21vh;
+    margin-right: 70vw;
+    font-size: 1.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+}
+
+.semi-donut{
+    padding: 1%;
+}
+
+
+/* Add mobile layout */
+@media (max-width: 1700px) {
+
+    .performances{
+        width: 100vw;
+        height: 50%;
+    }
+
+    .prf-title {
+        margin-right: 0;
+        margin-bottom: 25vh;
+        font-size: 2.5rem;
+    }
+
+    .content{
+        overflow: hidden;
+        margin-left: 0vw;
+    }
+
+    p{
+        margin-right: 0;
+        opacity: 0;
+    }
+
 }

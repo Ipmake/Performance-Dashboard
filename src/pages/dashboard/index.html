@@ -14,7 +14,7 @@
 
     <title>Dashboard</title>
   </head>
-  <body class="bg-dark">
+  <body class="bg-dark" style="display: flex; align-items: center; ">
 
     <div class="sidebar d-flex flex-column flex-shrink-0" style="width: 5.5rem; display: flex; align-items: center;">
       <a class="d-block p-3 link-dark text-decoration-none" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Icon-only">
@@ -43,12 +43,32 @@
       </ul>
     </div>
 
-    <div id="content" class="content" style="width: 100vw; height:100vh">
+    <div id="content" class="content" style="width: 100vw; height:100vh; display: flex; justify-content: center; flex-direction: column;">
       
+      <div class="performances" >
+        <h2 class="prf-title">CPU</h2>
+        <p id="cpu-name">name</p>
+        <div id="chart-cpu-USAGE" class="semi-donut" style="--percentage : 50; --fill: #4E5D94 ;">USAGE</div>
+        <div id="chart-cpu-TEMPERATURE" class="semi-donut" style="--percentage : 50; --fill: #4E5D94 ; ">TEMPERATURE</div>
+        <div id="chart-cpu-SPEED" class="semi-donut" style="--percentage : 50; --fill: #4E5D94 ; ">SPEED</div>
+        <div id="chart-cpu-VOLTAGE" class="semi-donut" style="--percentage : 50; --fill: #4E5D94 ; ">VOLTAGE</div>
+          
+      </div>
+      <div class="performances" >
+        <h2 class="prf-title">MEMORY</h2>
 
-      <div id="chart-CPU" class="semi-donut margin" style="--percentage : 50; --fill: #FF3D00 ;">CPU</div>
-      <div id="chart-MEMORY" class="semi-donut margin" style="--percentage : 50; --fill: #FF3D00 ;">Memory</div>
+        <div id="chart-memory-USAGE" class="semi-donut" style="--percentage : 50; --fill: #4E5D94 ; ">USAGE</div>
+        <div id="chart-memory-VOLTAGE" class="semi-donut" style="--percentage : 50; --fill: #4E5D94 ; ">VOLTAGE</div>
+          
+      </div>
+      <div class="performances" >
+       <h2 class="prf-title">GPU</h2>
 
+        <div id="chart-USAGE" class="semi-donut" style="--percentage : 50; --fill: #4E5D94 ;">USAGE</div>
+        <div id="chart-VRAM" class="semi-donut" style="--percentage : 50; --fill: #4E5D94 ; ">VRAM</div>
+        <div id="chart-TEMPERATURE" class="semi-donut" style="--percentage : 50; --fill: #4E5D94 ; ">TEMPERATURE</div>
+          
+      </div>
 
     </div>
 

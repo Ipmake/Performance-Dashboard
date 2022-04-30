@@ -1,14 +1,16 @@
 // Modules to control application life and create native browser window
 const {app, BrowserWindow} = require('electron')
 const path = require('path')
+require("electron-reload")(__dirname)
+
 
 function createWindow () {
   const mainWindow = new BrowserWindow({
-    width: 900,
-    height: 700,
-    minWidth: 800,
+    width: 1600,
+    height: 900,
     icon: './src/images/graph.png',
-    minHeight: 600,
+    minWidth: 1500,
+    minHeight: 800,
     webPreferences: {
       nodeIntegration: true,
       contextIsolation: false,
