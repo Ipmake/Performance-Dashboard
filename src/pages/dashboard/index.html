@@ -44,29 +44,72 @@
     </div>
 
     <div id="content" class="content" style="width: 100vw; height:100vh; display: flex; justify-content: center; flex-direction: column;">
-      
+
+
+      //CPU
       <div class="performances" >
         <h2 class="prf-title">CPU</h2>
-        <p id="cpu-name">name</p>
-        <div id="chart-cpu-USAGE" class="semi-donut" style="--percentage : 50; --fill: #4E5D94 ;">USAGE</div>
-        <div id="chart-cpu-TEMPERATURE" class="semi-donut" style="--percentage : 50; --fill: #4E5D94 ; ">TEMPERATURE</div>
-        <div id="chart-cpu-SPEED" class="semi-donut" style="--percentage : 50; --fill: #4E5D94 ; ">SPEED</div>
-        <div id="chart-cpu-VOLTAGE" class="semi-donut" style="--percentage : 50; --fill: #4E5D94 ; ">VOLTAGE</div>
-          
+        <p id="cpu-name" class="cpu">Loading...</p>
+
+
+        <div class="perfrom-graph"> 
+          <h3>USAGE</h3>
+          <div id="chart-cpu-USAGE" class="semi-donut" style="--percentage : 50; --fill: #4E5D94 ;">USAGE</div> 
+        </div>
+
+        <div class="perfrom-graph"> 
+          <h3>TEMP</h3>
+          <div id="chart-cpu-TEMPERATURE" class="semi-donut" style="--percentage : 50; --fill: #4E5D94 ; ">TEMPERATURE</div>
+          </div>
+
+        <div class="perfrom-graph"> 
+          <h3>SPEED</h3>
+          <div id="chart-cpu-SPEED" class="semi-donut" style="--percentage : 50; --fill: #4E5D94 ; ">SPEED</div> 
+          </div>
+        <div class="perfrom-graph"> 
+          <h3>VOLTAGE</h3>
+          <div id="chart-cpu-VOLTAGE" class="semi-donut" style="--percentage : 50; --fill: #4E5D94 ; ">VOLTAGE</div> 
+        </div>
+      
       </div>
+
+      //MEMORY
       <div class="performances" >
         <h2 class="prf-title">MEMORY</h2>
+        <p id="mem-name" class="mem">Loading...</p>
 
-        <div id="chart-memory-USAGE" class="semi-donut" style="--percentage : 50; --fill: #4E5D94 ; ">USAGE</div>
-        <div id="chart-memory-VOLTAGE" class="semi-donut" style="--percentage : 50; --fill: #4E5D94 ; ">VOLTAGE</div>
+        <div class="perfrom-graph"> 
+          <h3>USAGE</h3>
+          <div id="chart-memory-USAGE" class="semi-donut" style="--percentage : 50; --fill: #4E5D94 ; ">USAGE</div>
+        </div>
+
+        <div class="perfrom-graph"> 
+          <h3>VOLTAGE</h3>
+          <div id="chart-memory-VOLTAGE" class="semi-donut" style="--percentage : 50; --fill: #4E5D94 ; ">VOLTAGE</div>
+        </div>
           
       </div>
+
+      //GPU
       <div class="performances" >
        <h2 class="prf-title">GPU</h2>
+       <p id="gpu-name" class="gpu">Loading...</p>
 
+       <div class="perfrom-graph"> 
+        <h3>USAGE</h3>
         <div id="chart-USAGE" class="semi-donut" style="--percentage : 50; --fill: #4E5D94 ;">USAGE</div>
+      </div>
+
+      <div class="perfrom-graph"> 
+        <h3>VRAM</h3>
         <div id="chart-VRAM" class="semi-donut" style="--percentage : 50; --fill: #4E5D94 ; ">VRAM</div>
+      </div>
+
+      <div class="perfrom-graph"> 
+        <h3>TEMP</h3>
         <div id="chart-TEMPERATURE" class="semi-donut" style="--percentage : 50; --fill: #4E5D94 ; ">TEMPERATURE</div>
+      </div>
+        
           
       </div>
 

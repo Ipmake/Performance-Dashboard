@@ -63,7 +63,7 @@ li:hover {
     font-size: 3rem;
 }
 
-p{
+.cpu{
     color: white;
     position: absolute;
     top: 21vh;
@@ -72,6 +72,45 @@ p{
     overflow: hidden;
     text-overflow: ellipsis;
     max-width: 200px;
+    text-align: center;
+}
+
+.mem{
+    color: white;
+    position: absolute;
+    top: 28vh;
+    margin-right: 70vw;
+    font-size: 1.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+    text-align: center;
+}
+
+.gpu{
+    color: white;
+    position: absolute;
+    top: 82.5vh;
+    margin-right: 70vw;
+    font-size: 1.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+    text-align: center;
+}
+
+.perfrom-graph {
+    width: 325px;
+    height: 300px;
+    padding: 0.5%;
+    border-radius: 10%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.178);
 }
 
 .semi-donut{
@@ -98,9 +137,17 @@ p{
         margin-left: 0vw;
     }
 
-    p{
+    .cpu{
         margin-right: 0;
         opacity: 0;
     }
 
+    .gpu{
+        margin-right: 0;
+        opacity: 0;
+    }
+
+    .perfrom-graph{
+        height: auto;
+    }
 }
